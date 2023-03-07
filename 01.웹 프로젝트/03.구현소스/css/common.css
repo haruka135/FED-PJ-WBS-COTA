@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+@import url('reset.css');
+
+ body * {
+    outline: 1px dashed red;
+}
+
+header.main-header {
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+}
+.gnb {
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 43px;
+    transition: all .4s ease-in-out;
+}
+
+.left-menu {
+    display: flex;
+    align-items: center;
+}
+
+.left-menu .logo a {
+    display: block;
+    width: 95px;
+    height: 105px;
+    position: relative;
+}
+
+.left-menu .logo a img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-menu .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.left-menu .menu a {
+    color: #fff;
+    font-family:'Noto Sans KR';
+}
+.menu-wrapper {
+    margin-left: 120px;
+}
+
+.smenu {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.menu > li:first-child:hover .smenu {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu > li:nth-child(2):hover .smenu{
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu > li:nth-child(3):hover .smenu {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu > li:first-child:hover .smenu > ul{
+    display: flex;
+}
+
+.menu > li:nth-child(2):hover .smenu > ul {
+    display: flex;
+}
+
+.menu > li:nth-child(2):hover .smenu > ul > li > a {
+    white-space: nowrap;
+}
+
+.menu > li:nth-child(3) .smenu > ul {
+    display: flex;
+}
+
+.menu .smenu li {
+    padding: 41px 50px;
+}
+
+.gnb:hover {
+
+    background-color: #fff;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.gnb:hover .left-menu .menu li a {
+    color: #000;
+}
+
+.gnb:hover .right-menu .box {
+    border-color: #000;
+}
+
+.gnb:hover .right-menu .box a {
+    color: #000;
+}
+
+.gnb:hover .right-menu .box span {
+    background-color: #000;
+}
+
+.gnb:hover .right-menu .ham span {
+    background-color: #000;
+}
+
+.gnb:hover .smenu {
+    background-color: #fff;
+}
+
+.gnb:hover::after {
+    background-color: #fff;
+    width: 100%;
+    height: 95px;
+}
+
+.gnb .menu li.sm:hover::before {
+    height: 200px;
+    border: 1px solid red;
+}
+
+
+.menu > li > a {
+    padding: 0 50px;
+    display: block;
+    height: 105px;
+    line-height: 105px;
+    font-size: 16px;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+
+.right-menu .box {
+    width: 80px;
+    height: 32px;
+    border: 1px solid #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+.right-menu .box span {
+    display: inline-block;
+    width: 2px;
+    height: 9px;
+    background-color: #fff;
+    margin: 0 5px;
+}
+
+.right-menu .box a {
+    font-size: 11px;
+    color: #fff;
+}
+
+.box-wrap > a {
+    opacity: .4;
+}
+
+.hidden-all {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,.5);
+    z-index: 5;
+}
+
+div.on {
+    display: block;
+}
+
+.ham > a {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ham span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: #fff;
+
+}
+
+.hidden-menu {
+    display: none;
+}
+
+.active {
+    display: block;
+    width: 100%;
+    height: 125px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+}
+
+.hidden-wrap {
+    padding: 0 50px;
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-header .sub-logo a {
+    display: block;
+    width: 95px;
+    height: 125px;
+    line-height: 125px;
+}
+
+.sns-wrap .sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sns-wrap li a {
+    color: #000;
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 14px;
+    display: block;
+    height: 125px;
+    line-height: 125px;
+    padding: 0 12px;
+}
+
+.sns-wrap .close 
+
+
+.slides {
+    position: relative;
+}
+
+.slides .slide {
+    background: url(../img/slide_01.png) no-repeat center/cover;
+    width: 100%;
+    height: 910px;
+    z-index: -1;
+    position: relative;
+}
+
+.slide-contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slide-contents h2 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 90px;
+    letter-spacing: -4px;
+    white-space: nowrap;
+    margin-bottom: 40px;
+}
+
+.slide-contents p {
+    color: #fff;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 19px;
+    font-family: 'Noto Sans KR';
+    margin-bottom: 50px;
+}
+.view-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+.slide-contents .view-more {
+    text-align: center;
+    width: 210px;
+    height: 40px;
+    border: 1px solid #fff;
+    line-height: 42px;
+    border-radius: 30px;
+}
+
+
+.slide-contents .view-more a {
+    color: #fff;
+    display: block;
+    width: 212px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.icons {
+    background: url(../img/arrow-down.png) no-repeat;
+    width: 38px;
+    height: 37px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icons a {
+    display: block;
+    text-indent: -9999em;
+}
+

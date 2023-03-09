@@ -2,6 +2,47 @@ window.addEventListener("DOMContentLoaded",loadFn);
 
 function loadFn() {
 
+    const mediabtn = document.querySelectorAll(".media-btn");
+    const mslide = document.querySelector(".media-slide1");
+
+    let mlist = document.querySelectorAll(".media-slide01 > li");
+
+    mlist.forEach((ele,idx) => {
+        ele.setAttribute("slide-data",idx);
+    });
+
+    const mediaSlide = (seq) => {
+        let plist = mslide.querySelectorAll("li");
+
+        if(seq) {
+            mslide.style.left = "-100%";
+            mslide.style.transition = "left .4s ease-in-out";
+
+            setTimeout(()=>{
+                mslide.appendChild(plist[0]);
+                mslide.style.left = "0";
+                mslide.style.transition = "none";
+            },400);
+        } else {
+            mslide.insertBefore(plist[plist.length - 1],plist[0]);
+            mslide.style.left = "-100%";
+            mslide.style.transition = "none";
+
+            setTimeout(()=>{
+                mslide.style.left = "0";
+                mslide.style.transition = "left .4s ease-in-out";
+            },0);
+        }
+    };
+
+    mediabtn.forEach((ele,idx)=>{
+        ele.onclick = ()=>{
+            event.preventDefault();
+            console.log("버튼 눌렀어");
+            mediaSlide(idx);
+        };
+    });
+
     const bbtn = document.querySelectorAll(".bbtn");
     const bslide = document.querySelector(".business-slide");
     const bl = document.querySelectorAll(".bullet > li");

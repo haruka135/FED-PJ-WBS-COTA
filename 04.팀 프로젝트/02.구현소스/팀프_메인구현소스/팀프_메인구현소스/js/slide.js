@@ -145,7 +145,7 @@ window.addEventListener("DOMContentLoaded",() => {
 
     // 2. 슬라이드 변경 함수 만들기 
 
-    const exSlide = () => {
+    const exSlide = (seq) => {
 
         // 광클 금지 설정하기
         if(eprot) return;
@@ -184,13 +184,13 @@ window.addEventListener("DOMContentLoaded",() => {
             },0);
         }
 
-        // 2. 이동버튼대상에 이벤트 설정하기
-        ebtn.forEach((ele,idx) => {
-            ele.onclick = () => {
-                event.preventDefault();
-                exSlide();
-            };
-        });
     };
-
+    
+    // 2. 이동버튼대상에 이벤트 설정하기
+    ebtn.forEach((ele,idx) => {
+        ele.onclick = () => {
+            event.preventDefault();
+            exSlide();
+        };
+    });
 });

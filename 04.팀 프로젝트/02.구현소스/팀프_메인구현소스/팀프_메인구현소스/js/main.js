@@ -389,12 +389,17 @@ function loadFn(){
         const closer = () => {
             hmenu.style.display = "none";
             menu.style.display = "block";
+            closing.style.display = "none";
         };
 
         // 4. 클릭 이벤트
         menu.onclick = () => {
             event.preventDefault();
             hidden();
+        };
+        closing.onclick = () => {
+            event.preventDefault();
+            closer();
         };
 
     /************************************************************* 

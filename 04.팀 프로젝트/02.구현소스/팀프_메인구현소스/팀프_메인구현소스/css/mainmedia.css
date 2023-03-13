@@ -460,6 +460,22 @@
         right: 0;
         opacity: .4;
     }
+
+    .con .right-menu > section {
+        position: relative;
+      }
+      .con .right-menu .gallery .img-inner {
+      position: absolute;
+      width: 100%;
+          top: 74%;
+          padding: 20px;
+          box-sizing: border-box;
+          overflow: visible;
+      }
+
+      .con .right-menu .gallery .img-inner .imgcaption{
+        position: static;
+      }
 	
 }
 /* 600px 사이즈 이하 미디어쿼리 끝 */

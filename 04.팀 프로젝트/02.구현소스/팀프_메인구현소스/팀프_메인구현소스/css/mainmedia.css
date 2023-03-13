@@ -422,6 +422,44 @@
     .cont .con .newscon h2 {
         margin-left: 15px;
     }
+
+    .cont .con .newscon .news-inner {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .cont .con .newscon .news-inner .news-con {
+        width: 100%;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .cont .con .newscon .news-inner .news-con li img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cont .con .newscon .news-inner .news-con li:hover::after {
+        content: none;
+    }
+
+    .cont .con .newscon .news-inner .news-con li:hover span {
+        display: none;
+    }
+
+    .cont .con .newscon .news-inner .news-con li::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: .4;
+    }
 	
 }
 /* 600px 사이즈 이하 미디어쿼리 끝 */

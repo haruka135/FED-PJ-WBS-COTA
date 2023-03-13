@@ -53,7 +53,7 @@ body{
   left: 0;
   right: 0;
   background-color: black;
-  opacity: .4;
+  opacity: .6;
   z-index: 1;
 }
 
@@ -98,19 +98,23 @@ body{
   left: 50%;
   transform: translateX(-50%);
   margin-top: 30px;
-  display: flex;
-  gap: 20px;
   justify-content: center;
   align-items: center;
-  transition: all .4s;
 }
 
-.cont .banner .img-banner .sl1 .text .more-button::after {
+.cont .banner .img-banner .sl1 .text .more-button a {
+  display: inline-block;
+}
+
+.cont .banner .img-banner .sl1 .text .more-button a::after {
     content: '';
+    display: inline-block;
     background: url(../img/arrow_white.svg) no-repeat 0 10px;
     width: 30px;
     height: 33px;
+    vertical-align: -8px;
     transition: all .4s;
+    margin-left: 15px;
 }
 
 .cont .banner .img-banner .sl1 .text .more-button span {
@@ -118,18 +122,16 @@ body{
   font-size: 25px;
   font-family: 'Bebas Neue';
   white-space: nowrap;
-}
-
-.cont .banner .img-banner .sl1 .text .more-button:hover {
-  background-color: rgb(227, 237, 33,.2);
+  text-align: center;
+  line-height: 61px;
 }
 
 .cont .banner .img-banner .sl1 .text .more-button:hover span {
   color: #fff;
 }
 
-.cont .banner .img-banner .sl1 .text .more-button:hover::after {
-  margin-left: 5px;
+.cont .banner .img-banner .sl1 .text .more-button a:hover::after {
+  margin-left: 30px;
 }
 
 .saturn-info {
@@ -432,9 +434,8 @@ body{
 }
 
 .newscon .news-inner {
-  width: calc(100vw - 200px) !important;
   margin: 0 auto;
-  width: 1006px;
+  width: 100%;
   height: 239px;
   
 }
@@ -442,14 +443,24 @@ body{
 .newscon .news-inner .news-con {
   display: flex;
   gap: 18px;
+  justify-content: center;
 }
 
 .newscon .news-inner .news-con li {
   position: relative;
+  overflow: hidden;
+}
+
+.newscon .news-inner .news-con li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
 }
 
 .newscon .news-inner .news-con li span {
   display: none;
+  transition: all .4s ease-in-out;
 }
 
 .newscon .news-inner .news-con li:hover::after {
@@ -461,16 +472,25 @@ body{
   right: 0;
   background-color: #000;
   opacity: .4;
+  z-index: 1;
+}
+
+.newscon .news-inner .news-con li:hover img {
+  transform: scale(1.1);
 }
 
 .newscon .news-inner .news-con li:hover span {
   display: block;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 15px;
+  font-size: 20px;
   white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  text-align: center;
+  font-family: 'Bebas Neue';
+  z-index: 4;
 }
 
 .explorer {
@@ -479,8 +499,8 @@ body{
 
 .explorer .explorer-wrapper {
   position: relative;
-  width: 69%;
-  height: 320px;
+  width: 100%;
+  height: 450px;
   overflow: hidden;
 }
 
@@ -495,8 +515,8 @@ body{
 }
 
 .explorer .explorer-wrapper .explorer-slide li {
-  width: 320px;
-  height: 320px;
+  width: 33%;
+  height: 100%;
   flex-shrink: 0;
   flex-basis: 31%;
 }
@@ -514,20 +534,20 @@ body{
   transform: translate(-50%,-50%);
 }
 
-.explorer .el { 
-  right: 5%;
+.explorer .elbtn { 
+  right: 90%;
   display: block;
-  width: 21px;
-  height: 21px;
+  width: 62px;
+  height: 116px;
   text-indent: -9999em;  
-  background: url(../img/btn-right.png) no-repeat center;        
+  background: url(../img/left_btn.png) no-repeat center;        
 }
-.explorer .er { 
+.explorer .erbtn { 
   right: 10%;
   display: block;
-  width: 21px;
-  height: 21px;
+  width: 62px;
+  height: 116px;
   text-indent: -9999em; 
-  background: url(../img/btn.png) no-repeat; 
+  background: url(../img/right_btn.png) no-repeat; 
   
 }

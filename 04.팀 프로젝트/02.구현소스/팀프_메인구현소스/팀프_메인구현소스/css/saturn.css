@@ -507,7 +507,7 @@ body{
 
 .explorer .explorer-wrapper .explorer-slide {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   position: absolute;
   top: 0;
   left: -36%;

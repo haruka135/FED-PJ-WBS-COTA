@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+/* SOLAR SYSTEM PJ 공통 미디어쿼리 - mainmedia.css */
+
+/* 1400px 사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 1400px) {
+
+    /******** 2. 메인영역 *********/
+    #slide .tbx{
+        width: 23vw;
+    }
+    #slide .tbg1{
+        width: 30vw;
+    }
+    #slide .tbx h2{
+        font-size: 3.5rem;
+        line-height: 1.4;
+      }
+      #slide .tbx p{
+        font-size: 1.8rem;
+        font-weight: 200;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+      #slide .tbx .btn{
+        width: 8vw;
+      }
+      #slide .tbx .btn a{
+        font-size: 1.4rem;
+      }
+
+    /* 3-1. More Destinations */
+    .info .more{
+        padding: 10vh 0;
+    }
+    .info .more h3{
+        margin-bottom: 8vh;
+    }
+    .info .mbx{
+        height: 35vh;
+    }
+    .info #mslide li{
+        margin: 0 1vw;
+        flex-basis: 32%;
+    }
+    .info #mslide li span {
+        bottom: -15%;
+    }
+    .mbtn{
+        top: 50%;
+        width: 3.5vw;
+    }
+    .mb1 {
+        left: 0;
+
+    }
+    .mb2 {
+        right: 0;
+    }
+
+    /* 3-2. SNS */
+    .info .sns{
+    padding: 0 0 10vh;
+    }
+
+    /* 비주얼 영역 */
+	.text span:nth-of-type(1) {
+		font-size: 9px;
+	}
+        
+}
+/* 1400px 사이즈 이하 미디어쿼리 끝 */
+
+
+
+
+/* 1100px 사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 1100px) {
+
+    /********** 1. 상단영역 *********/
+    .gnb{
+        display: none;
+    }
+    .ham {
+        display: block;
+    }
+    /* 햄버거버튼 클릭시 */
+    .top.active{
+        background-color: #052a46;
+    }
+    .top.active .ham{
+        z-index: 9999;
+        color: #fff;
+        transform: scale(1);
+    }
+    .top.active .ham::before {
+        content: '×';
+    }
+    .top.active .gnb{
+        display: block;
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #052a46;
+        z-index: 99;
+    }
+    .top.active .gnb ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .top.active .gnb ul li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .top.active .gnb ul li:last-child{
+        display: none;
+    }
+
+    /******** 2. 메인영역 *********/
+    #slide .tbx{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 70vw;
+      }
+    #slide .tbx h2{
+        font-size: 3rem;
+        line-height: 1.4;
+      }
+      #slide .tbx p{
+        font-size: 1.7rem;
+        font-weight: 200;
+      }
+      #slide .tbx .btn{
+        width: 20vw;
+      }
+      #slide .tbx .btn a{
+        font-size: 1.4rem;
+      }
+      /*이동버튼*/
+    .abtn {
+        top: 90%;
+    }
+
+    /* 3-1. More Destinations */
+    .info .more {
+        padding: 7vh 0;
+    }
+
+    /* 3-3. 하단링크 */
+    .info .blink ul {
+        padding: 0 5vw;
+    }
+
+}
+/* 1100px 사이즈 이하 미디어쿼리 끝 */
+
+
+/* 600px 사이즈 이하 미디어쿼리 시작 */
+@media screen and (max-width: 600px) {
+    .topbx{
+        margin: 0 2vw;
+        height: 8vh;
+    }
+    h1.logo {
+        width: 250px;
+        height: 45px;
+    }
+    .top.active .gnb{
+        top: 7vh;
+    }
+
+    /* 3-1. More Destinations */
+    .info #mslide li span {
+        font-size: 1.5rem;
+    }
+
+    .info #mslide li {
+        margin: 0 9vw;
+        flex-basis: 65%;
+    }
+    .mb1 {
+        left: 50px;
+    }
+    .mb2 {
+        right: 50px;
+    }
+	
+	/* 비주얼 슬라이드 영역 */
+
+	.cont .banner .img-banner .sl1 .text span:nth-of-type(1) {
+		top: 48%;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 40px;
+	}
+	
+	.cont .banner .img-banner .sl1 .text span:nth-of-type(2) {
+		top: 57%;
+        left: 43%;
+        transform: translateX(-50%);
+		font-size: 45px;
+	}
+	
+	.cont .banner .img-banner .sl1 .text p {
+		font-size: 13px;
+		line-height: 1.3;
+	}
+	
+	.cont .saturn-info-more .saturn-info span {
+		display: none;
+	}
+	
+	.cont .saturn-info-more .saturn-info .buttons {
+		width: 50%;
+	}
+	
+	.cont .con {
+		flex-direction: column;
+		padding: 0;
+	}
+	
+	.cont .con .left-menu {
+		width: 100%;
+		height: 54px;
+		background-color: #fcf6ef;
+		margin-bottom: 83px;
+        position: relative;
+	}
+	
+	.cont .con .left-menu > ul a,
+    .cont .con .left-menu .hidden-ul a,
+    .cont .con .left-menu .hidden-smenu a {
+		display: none;
+	}
+	
+	.cont .con .left-menu .hidden-ul {
+		position: relative;
+		height: 54px;
+        z-index: 2;
+	}
+	
+	.cont .con .left-menu .hidden-ul li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		width: 100%;
+        height: 54px;
+	}
+	
+	.cont .con .left-menu .hidden-ul li span {
+		font-size: 17px;
+		position: absolute;
+		top: 50%;
+		left: 3%;
+		transform: translateY(-50%);
+		font-family: 'Metropolis';
+		text-transform: uppercase;
+		letter-spacing: -1px;
+	}
+	
+	.cont .con .left-menu .hidden-ul li > a {
+		display: block;
+		position: absolute;
+		right: 3%;
+		text-align: right;
+	}
+
+    .cont .con .left-menu .hidden-smenu {
+        display: block;
+        width: 100%;
+        height: 250px;
+        background-color: #fcf6ef;
+        position: absolute;
+    }
+
+    .cont .con .left-menu .hidden-smenu {
+        padding-left: 6%;
+        padding-top: 53px;
+        box-shadow:  0 0 5px rgba(0,0,0,.4);
+        display: none;
+    }
+
+    .cont .con .left-menu .hidden-smenu li {
+        margin-right: 17%;
+    }
+
+    .cont .con .left-menu .hidden-smenu li a {
+        border-bottom: 1px solid #b5b5b5;
+    }
+
+    .cont .con .left-menu .hidden-smenu li a {
+        display: block;
+        width: 100%;
+        height: 53px;
+        line-height: 53px;
+        color: #b5b5b5;
+        font-family: 'Metropolis';
+        font-size: 17px;
+    }
+
+    .cont .con .left-menu .hidden-smenu li a:hover {
+        color: #000;
+        border-bottom: 1px solid #000;
+    }
+
+    .cont .con .left-menu .close {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        display: none;
+    }
+
+    .cont .con .left-menu .close span {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: block;
+        width: 1px;
+        height: 24px;
+        background-color: #000;
+    }
+
+    .cont .con .left-menu .close span:first-child {
+        transform: rotate(45deg);
+    }
+
+    .cont .con .left-menu .close span:last-child {
+        transform: rotate(135deg);
+    }
+	
+	/* 컨텐츠 영역 */
+
+    .cont .con .right-menu {
+        width: 100%;
+    }
+
+    .cont .con .right-menu > section {
+        margin-left: 0;
+    }
+
+    /* History */
+
+	.cont .con .right-menu > section > h2 {
+		font-weight: normal;
+	}
+
+    .cont .con .right-menu .history {
+        margin-left: 15px;
+    }
+
+	.cont .con .right-menu .history p {
+        width: 86%;
+		padding-left: 38px;
+        white-space: normal !important;
+	}
+
+    .cont .con .right-menu .history .buttons {
+        padding-left: 38px;
+    }
+
+    /* Gallery */
+
+    .cont .con .gallery .gallery-inner {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cont .con .gallery h2 {
+        margin-left: 15px;
+    }
+
+    .cont .con .gallery .bullet-inner {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .cont .con .gallery .img-inner {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    /* Explorer */
+
+    .cont .con .explorer h2 {
+        margin-left: 15px;
+    }
+
+    .cont .con .explorer .explorer-wrapper {
+        width: 100%;
+    }
+
+    .cont .con .explorer .explorer-wrapper .explorer-slide {
+        gap: 0;
+        flex-direction: column;
+        
+    }
+
+    .cont .con .explorer .explorer-wrapper .explorer-slide li {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cont .con .explorer div:nth-of-type(2),
+    .cont .con .explorer div:nth-of-type(3) {
+        display: none;
+    }
+
+    /* News */
+
+    .cont .con .newscon h2 {
+        margin-left: 15px;
+    }
+	
+}
+/* 600px 사이즈 이하 미디어쿼리 끝 */

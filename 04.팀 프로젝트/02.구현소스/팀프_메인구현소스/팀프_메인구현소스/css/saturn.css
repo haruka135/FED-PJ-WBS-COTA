@@ -224,7 +224,7 @@ body{
 .con .left-menu {
   display: flex;
   flex-direction: column;
-  width: 147px;
+  width: 300px;
 }
 
 .con .left-menu ul:first-child a,
@@ -234,8 +234,36 @@ body{
   height: 12px;
   padding: 12px 0;  
   margin-left: 40px;
-  font-family: 'Metropolis';
+  font-family: 'Bebas Geue';
+  font-size: 21px;
+  line-height: 12px;
+  position: relative;
+}
+
+.con .left-menu .hidden-ul a {
+  font-family:'Metropolis';
   font-size: 17px;
+}
+
+.cont .con .left-menu ul li a {
+  transition: all .5s;
+}
+
+.cont .con .left-menu ul:first-childå li a:hover {
+  margin-bottom: 12px;
+  color: #10305c;
+  font-weight: bold;
+}
+
+.cont .con .left-menu ul:first-child li a:hover::after {
+  content:'';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #1d56a3;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
 }
 
 .con .left-menu .hidden-ul li {
@@ -248,6 +276,7 @@ body{
 
 .con .right-menu {
   width: 93vw;
+  height: 100%;
 }
 
 .con .right-menu > section {
@@ -442,7 +471,6 @@ body{
 .newscon .news-inner .news-con {
   display: flex;
   gap: 18px;
-  justify-content: center;
 }
 
 .newscon .news-inner .news-con li {
@@ -495,33 +523,34 @@ body{
 .explorer {
   position: relative;
   width: 90%;
-  height: 100vh;
+  height: 590px;
   overflow: hidden;
 }
 
 .explorer .explorer-wrapper {
   position: relative;
-  width: 100%;
-  height: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20vw;
+  aspect-ratio: 1/0.75;
+  margin-top: 90px;
 }
 
 .explorer .explorer-wrapper .explorer-slide {
   display: flex;
-  gap: 30px;
+  gap: 0 5vw;
   position: absolute;
   top: 0;
-  left: -36%;
+  left: -250%;
   width: 100%;
   height: 100%;
 
 }
 
 .explorer .explorer-wrapper .explorer-slide li {
-  width: 33%;
-  height: 100%;
   flex-shrink: 0;
-  flex-basis: 31%;
-  filter: brightness(70%);
+  flex-basis: 100%;
+  filter: brightness(30%);
 }
 
 .explorer .explorer-wrapper .explorer-slide li:nth-child(3) {
@@ -550,6 +579,7 @@ body{
 .explorer .explorer-wrapper .explorer-slide li div span {
   display: block;
   text-align: center;
+  white-space: nowrap;
 }
 
 .explorer .explorer-wrapper .explorer-slide li div span:first-child {
@@ -560,7 +590,7 @@ body{
 }
 
 .explorer .explorer-wrapper .explorer-slide li div span:last-child {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Metropolis';
   letter-spacing: -2px;
   color: #1d56a3;
@@ -571,10 +601,11 @@ body{
   top: 50%;
   right: 50%;
   transform: translate(-50%,-50%);
+  z-index: 5;
 }
 
 .explorer .elbtn { 
-  right: 90%;
+  right: 180%;
   display: block;
   width: 62px;
   height: 116px;
@@ -582,7 +613,7 @@ body{
   background: url(../img/left_btn.png) no-repeat center;        
 }
 .explorer .erbtn { 
-  right: 10%;
+  right: -110%;
   display: block;
   width: 62px;
   height: 116px;

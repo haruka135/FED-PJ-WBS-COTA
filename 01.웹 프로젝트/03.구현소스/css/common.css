@@ -79,6 +79,30 @@ header.main-header {
     transform: translateX(-50%);
 }
 
+.left-menu .menu > li:hover .smenu li {
+    position: relative;
+}
+
+.left-menu .menu > li:hover .smenu li:hover a {
+    color: orange;
+}
+
+.left-menu .menu > li:hover .smenu li:hover::after {
+    content: '';
+    display: inline-block;
+    width: 105px;
+    height: 4px;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.left-menu .menu > li:hover .smenu li a {
+    display: inline-block;
+}
+
 .menu-wrapper {
     margin-left: 120px;
 }

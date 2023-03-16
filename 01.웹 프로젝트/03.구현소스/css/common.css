@@ -63,11 +63,11 @@ header.main-header {
     font-family:'Noto Sans KR';
 }
 
-.left-menu .menu > li > a:hover {
+.left-menu .menu > li:hover > a {
     color: orange !important;
 }
 
-.left-menu .menu > li > a:hover::after {
+.left-menu .menu > li:hover > a::after {
     content: '';
     display: block;
     width: 88px;

@@ -78,15 +78,21 @@ function loadFn() {
         const ham = document.querySelector(".ham a");
         const hmenu = document.querySelector(".hiddenmenu");
 
+        let cksts = 1;
         ham.onclick = () => {
-            hmenu.style.right = "0";
-            hmenu.style.transition = "right .4s ease-in-out";
+            if(cksts){
+
+                hmenu.style.right = "0";
+                hmenu.style.transition = "right .4s ease-in-out";
+            }
+            else{
+                hmenu.style.right = "-100%";
+                hmenu.style.transition = "right .4s ease-in-out";
+
+            }
+            cksts===1?cksts=0:cksts=1;
         };
 
-        ham.onmouseover = () => {
-            hmenu.style.right = "-100%";
-            hmenu.style.transition = "right .4s ease-in-out";
-        }
 
         const robtn = document.querySelectorAll(".robtn");
         const roslide = document.querySelectorAll(".roasterlist");

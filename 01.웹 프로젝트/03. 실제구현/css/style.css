@@ -3,3 +3,183 @@
 @import url('reset.css');
 @import url('common.css');
 
+.mainpage .hidden-menu {
+    display: none;
+}
+
+.mainpage .hidden-menu.on {
+    width: 100%;
+    height: 970px;
+    position: absolute;
+    display: block;
+}
+
+.mainpage .hidden-menu.on::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0,0,0,.8);
+    z-index: 3;
+}
+
+.mainpage .hidden-menu.on .hidden-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    top: 105px;
+}
+
+.mainpage .hidden-menu.on .hidden-inner > ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.mainpage .hidden-menu.on .hidden-inner > ul > li > a {
+    color: #fff;
+    display: inline-block;
+    width: 260px;
+    height: 44px;
+    text-align: left;
+    font-size: 1.25rem;
+    border-bottom: 2px solid rgb(255,255,255,.8);
+}
+
+.mainpage .hidden-menu.on .hidden-inner > ul > li > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-top: 30px;
+}
+
+.mainpage .hidden-menu.on .hidden-inner > ul > li > ul > li > a {
+    color: #ddd;
+    font-size: 1.12rem;
+}
+
+.mainpage .hidden-menu.on .hidden-inner > ul > li > ul > li > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 18px;
+}
+
+.mainpage .hidden-menu.on .hidden-inner > ul > li > ul > li > ul li a {
+    color: rgb(255,255,255,.5);
+    font-size: 1rem;
+}
+
+.mainpage .visual {
+    width: 100%;
+    height: 970px;
+}
+
+.mainpage .visual .visual-list {
+    width: 100%;
+    height: 100%;
+}
+
+.mainpage .visual .visual-list li {
+    width: 100%;
+    height: 100%;
+    background: url(../img/main_ban_01.jpg) no-repeat center/cover;
+    position: relative;
+}
+
+.mainpage .visual .visual-list li .visual-contents {
+    position: absolute;
+    top: 468px;
+    left: 250px;
+}
+
+.mainpage .visual .visual-list li .visual-contents > span {
+    display: block;
+}
+
+.mainpage .visual .visual-list li .visual-contents > span:nth-of-type(1) {
+    color: #fff;
+    font-size: 3.125rem;
+    letter-spacing: -3%;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.mainpage .visual .visual-list li .visual-contents > span:nth-of-type(2) {
+    background: linear-gradient(90.06deg, #007FBF 8.53%, #009580 63.22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    font-size: 3.43rem;
+    letter-spacing: -2%;
+    margin-bottom: 56px;
+}
+
+.mainpage .visual .visual-list li .visual-contents .bullet {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.mainpage .visual .visual-list li .visual-contents .bullet > span {
+    color: #fff;
+}
+
+.mainpage .visual .visual-list li .visual-contents .bullet .bar.on {
+    position: relative;
+}
+
+.mainpage .visual .visual-list li .visual-contents .bullet .bar.on span.bar-back {
+    display: block;
+    width: 79px;
+    height: 4px;
+    background-color: #fff;
+    opacity: .7;
+}
+
+.mainpage .visual .visual-list li .visual-contents .bullet .bar.on span.progressive {
+    display: block;
+    width: 79px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    animation: progressive 3s ease-in-out;
+}
+
+@keyframes progressive {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 79px;
+    }
+}
+
+.mainpage .business {
+    width: 100%;
+    height: 1281px;
+    background: url(../img/bg_main_business.jpg) no-repeat center/cover;
+}
+
+
+.mainpage .business .business-inner {
+    padding: 0 295px;
+    margin: 0 auto;
+}
+
+
+.mainpage .business .business-inner h2 {
+    padding-top: 196px;
+    font-size: 4.375rem;
+    font-weight: 800;
+    letter-spacing: -7%;
+    color: #fff;
+}
+
+.mainpage .business .business-inner h2 span {
+    font-weight: 100;
+}

@@ -6,12 +6,6 @@ document.addEventListener("DOMContentLoaded",function() {
 
     ham.onclick = () => {
         hmenu.classList.toggle("on");
-
-        let bdy = document.body;
-        if(hmenu.classList.contains("on"))
-        bdy.style.overflow = "hidden";
-        else 
-        bdy.style.overflow = "visible";
     }
 
     let bar_seq = 0;

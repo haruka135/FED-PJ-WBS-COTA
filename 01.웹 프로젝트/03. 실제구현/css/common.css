@@ -23,6 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .main-header .header-inner .logo {
@@ -44,6 +45,9 @@ body {
 
 .main-header .header-inner .center-menu {
     height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main-header .header-inner .center-menu .menu-list {
@@ -116,6 +120,8 @@ body {
     display: flex;
     gap: 84.5px;
     align-items: center;
+    position: absolute;
+    right: 60px;
 }
 
 .main-header .header-inner .right-menu .lang {
@@ -141,6 +147,7 @@ body {
 .main-header .header-inner .right-menu .lang a:nth-of-type(2) {
     opacity: .5;
 }
+
 
 .main-header .header-inner .right-menu .ham a {
     display: flex;

@@ -139,7 +139,7 @@
     display: inline-block;
     width: 20px;
     height: 4px;
-    vertical-align: 2px;
+    vertical-align: 4px;
     transition: .7s;
 }
 .mainpage .visual .visual-list li .visual-contents .bullet .bar.on .barbx {
@@ -186,7 +186,7 @@
 }
 
 
-.mainpage .business .business-inner h2 {
+.mainpage .business .business-inner > h2 {
     padding-top: 196px;
     font-size: 4.375rem;
     font-weight: 800;
@@ -194,11 +194,11 @@
     color: #fff;
 }
 
-.mainpage .business .business-inner h2 span {
+.mainpage .business .business-inner > h2 span {
     font-weight: 100;
 }
 
-.mainpage .business .business-inner h3 {
+.mainpage .business .business-inner > h3 {
     padding-top: 51px;
     font-size: 1rem;
     font-weight: 800;
@@ -209,13 +209,87 @@
     background-clip: text;
 }
 
-.mainpage .business .business-inner p {
+.mainpage .business .business-inner > p {
     padding-top: 19px;
     font-size: 2rem;
     color: #fff;
     letter-spacing: -0.07rem;
 }
 
-.mainpage .business .business-inner p span {
+.mainpage .business .business-inner > p span {
     font-weight: 800;
+}
+
+.mainpage .business .business-inner .business-con {
+    margin-top: 57px;
+}
+
+.mainpage .business .business-inner .business-con .business-list {
+    display: flex;
+    gap: 21px;
+}
+
+.mainpage .business .business-inner .business-con .business-list li {
+    flex: 1;
+}
+
+.mainpage .business .business-inner .business-con .business-list li:first-child .con .img {
+    width: 265px;
+    height: 429px;
+    background: url(../img/main_business_img1.jpg) no-repeat center/cover;
+    margin-bottom: 26px;
+}
+
+.mainpage .business .business-inner .business-con .business-list li:nth-child(2) .con .img {
+    width: 265px;
+    height: 429px;
+    background: url(../img/main_business_img2.jpg) no-repeat center/cover;
+    margin-bottom: 26px;
+}
+
+.mainpage .business .business-inner .business-con .business-list li:nth-child(3) .con .img {
+    width: 265px;
+    height: 429px;
+    background: url(../img/main_business_img3.jpg) no-repeat center/cover;
+    margin-bottom: 26px;
+}
+
+.mainpage .business .business-inner .business-con .business-list li:nth-child(4) .con .img {
+    width: 265px;
+    height: 429px;
+    background: url(../img/main_business_img4.jpg) no-repeat center/cover;
+    margin-bottom: 26px;
+}
+
+.mainpage .business .business-inner .business-con .business-list li:nth-child(5) .con .img {
+    width: 265px;
+    height: 429px;
+    background: url(../img/main_business_img5.jpg) no-repeat center/cover;
+    margin-bottom: 26px;
+}
+
+
+
+
+.mainpage .business .business-inner .business-con .business-list li .con > h3 {
+    font-size: 1rem;
+    letter-spacing: -7%;
+    color: rgb(255,255,255,.3);
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.mainpage .business .business-inner .business-con .business-list li .con > h2 {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: -7%;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.mainpage .business .business-inner .business-con .business-list li .con p {
+    width: 265px;
+    font-size: 1rem;
+    letter-spacing: -7%;
+    color: rgb(255,255,255,.8);
 }

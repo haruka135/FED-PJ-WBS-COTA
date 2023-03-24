@@ -183,3 +183,25 @@
 .mainpage .business .business-inner h2 span {
     font-weight: 100;
 }
+
+.mainpage .business .business-inner h3 {
+    padding-top: 51px;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.15rem;
+    background: linear-gradient(90deg, #007BBB 1%, #00A256 8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.mainpage .business .business-inner p {
+    padding-top: 19px;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: -0.07rem;
+}
+
+.mainpage .business .business-inner p span {
+    font-weight: 800;
+}

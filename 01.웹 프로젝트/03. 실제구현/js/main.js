@@ -5,8 +5,22 @@ document.addEventListener("DOMContentLoaded",function() {
     const hmenu = document.querySelector(".hidden-menu");
 
     ham.onclick = () => {
-        hmenu.classList.add("on");
+        hmenu.classList.toggle("on");
+
+        let bdy = document.body;
+        if(hmenu.classList.contains("on"))
+        bdy.style.overflow = "hidden";
+        else 
+        bdy.style.overflow = "visible";
     }
 
+    let bar_seq = 0;
+    const bar = document.querySelectorAll(".bar");
+    setInterval(()=>{
+        bar[bar_seq].classList.remove("on");
+        bar_seq++;
+        if(bar_seq===3) bar_seq = 0;
+        bar[bar_seq].classList.add("on")
+    },3000)
 
 });

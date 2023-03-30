@@ -784,16 +784,22 @@
     letter-spacing: 0.02rem;
 }
 
-.mainpage .pr-center .pr-flex-inner .pr-flex .pr-flex-left .pr-flex-left-menu .plus-box {
-    display: inline-block;
-    border: 1px solid #fff;
+.mainpage .pr-center .pr-flex-inner .pr-flex .pr-flex-left .pr-flex-newspaper {
+    display: flex;
+    flex-direction: column;
 }
 
-.mainpage .pr-center .pr-flex-inner .pr-flex .pr-flex-left .pr-flex-left-menu .plus-box a {
-    display: inline-block;
-    text-indent: -9999em;
-    width: 15px;
-    height: 15px;
-    background: url(../img/plus.png) no-repeat;
-    padding: 16px;
+.mainpage .pr-center .pr-flex-inner .pr-flex .pr-flex-left .pr-flex-newspaper li {
+    border-bottom: 2px solid rgba(255,255,255,.5);
+}
+
+.mainpage .pr-center .pr-flex-inner .pr-flex .pr-flex-left .pr-flex-newspaper li .newspaper-con {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.mainpage .pr-center .pr-flex-inner .pr-flex .pr-flex-left .pr-flex-newspaper li .newspaper-con span {
+    color: rgba(255,255,255,.5);
+    font-size: 1.125rem;
 }

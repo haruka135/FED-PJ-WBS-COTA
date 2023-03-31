@@ -512,10 +512,6 @@
     display: flex;
 }
 
-.mainpage .ir-information .ir-inner .all-contents-wrapper .first-flex .flex > li:first-child {
-    padding-right: 148px;
-}
-
 .mainpage .ir-information .ir-inner .all-contents-wrapper .first-flex .flex > li:first-child > h2 {
     padding-top: 142px;
     font-size: 1rem;

@@ -56,6 +56,14 @@ document.addEventListener("DOMContentLoaded",function() {
 
     // 서브메뉴 슬라이드
 
-    
+    $(".sub-menu").hide();
+
+    $(".center-menu > .menu-list > li").hover(function(){
+        $(".sub-menu",this).stop().slideDown(400);
+    },function(){
+        (".sub-menu",this).stop().slideUp(400);
+    })
+
+
 
 }); /////////////////////// load //////////////////////////////
